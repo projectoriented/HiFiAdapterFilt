@@ -114,9 +114,9 @@ do
 
 	   if command -v pigz &> /dev/null
 	   then
-	   	cat ${read_path_str}/${x}.fastq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" | pigz -p ${threads} --fast > ${outdir}/${x}.filt.fastq.gz
+	   	cat ${read_path_str}/${x}.fastq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" > ${outdir}/${x}.filt.fastq
 	   else
-	   	cat ${read_path_str}/${x}.fastq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" | gzip -1 > ${outdir}/${x}.filt.fastq.gz
+	   	cat ${read_path_str}/${x}.fastq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" > ${outdir}/${x}.filt.fastq
 	   fi
 
 	   f=`cat ${outdir}/${x}.blocklist | wc -l` #number of adapter contaminated reads
@@ -157,9 +157,9 @@ do
 
 	   if command -v pigz &> /dev/null
 	   then
-	   	cat ${read_path_str}/${x}.fq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" | pigz -p ${threads} --fast > ${outdir}/${x}.filt.fastq.gz
+	   	cat ${read_path_str}/${x}.fq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" > ${outdir}/${x}.filt.fastq
 	   else
-	   	cat ${read_path_str}/${x}.fq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" | gzip -1 > ${outdir}/${x}.filt.fastq.gz
+	   	cat ${read_path_str}/${x}.fq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" > ${outdir}/${x}.filt.fastq
 	   fi
 
 	   f=`cat ${outdir}/${x}.blocklist | wc -l` #number of adapter contaminated reads
@@ -204,9 +204,9 @@ do
 
 	   if command -v pigz &> /dev/null
 	   then
-	   	cat ${read_path_str}/${x}.fastq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" | pigz -p ${threads} --fast > ${outdir}/${x}.filt.fastq.gz
+	   	cat ${read_path_str}/${x}.fastq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" > ${outdir}/${x}.filt.fastq
 	   else
-	   	cat ${read_path_str}/${x}.fastq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" | gzip -1 > ${outdir}/${x}.filt.fastq.gz
+	   	cat ${read_path_str}/${x}.fastq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" > ${outdir}/${x}.filt.fastq
 	   fi
 
 	   f=`cat ${outdir}/${x}.blocklist | wc -l` #number of adapter contaminated reads
@@ -239,9 +239,9 @@ do
 
 	   if command -v pigz &> /dev/null
 	   then
-	   	cat ${read_path_str}/${x}.fastq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" | pigz -p ${threads} --fast > ${outdir}/${x}.filt.fastq.gz
+	   	cat ${read_path_str}/${x}.fastq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" > ${outdir}/${x}.filt.fastq
 	   else
-	   	cat ${read_path_str}/${x}.fastq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" | gzip -1 > ${outdir}/${x}.filt.fastq.gz
+	   	cat ${read_path_str}/${x}.fastq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" > ${outdir}/${x}.filt.fastq
 	   fi
 
 	   f=`cat ${outdir}/${x}.blocklist | wc -l` #number of adapter contaminated reads
@@ -272,9 +272,9 @@ do
 
 	   if command -v pigz &> /dev/null
 	   then
-	   	cat ${read_path_str}/${x}.fq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" | pigz -p ${threads} --fast > ${outdir}/${x}.filt.fastq.gz
+	   	cat ${read_path_str}/${x}.fq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" > ${outdir}/${x}.filt.fastq
 	   else
-	   	cat ${read_path_str}/${x}.fq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" | gzip -1 > ${outdir}/${x}.filt.fastq.gz
+	   	cat ${read_path_str}/${x}.fq | paste - - - - | grep -v -f ${outdir}/${x}.blocklist -F | tr "\t" "\n" > ${outdir}/${x}.filt.fastq
 	   fi
 
 	   f=`cat ${outdir}/${x}.blocklist | wc -l` #number of adapter contaminated reads
